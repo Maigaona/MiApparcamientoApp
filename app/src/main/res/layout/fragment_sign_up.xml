@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- TODO:Falta colocar al principio el icono y el titulo  -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/usuario_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/nombre"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="40dp"
+        style="@style/edittextstyle"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:maxLength="50"
+            android:minHeight="48dp"
+            android:inputType="textPersonName"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/correo_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/correo"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/usuario_layout"
+        style="@style/edittextstyle"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/correo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="50"
+            android:minHeight="48dp"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="-2dp"
+            tools:layout_editor_absoluteY="96dp"
+            android:inputType="textEmailAddress"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/contrasena_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/contrase_a"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/correo_layout"
+        style="@style/edittextstyle"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/contrasena"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="50"
+            android:minHeight="48dp"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="-2dp"
+            tools:layout_editor_absoluteY="96dp"
+            android:inputType="textPassword"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/vercontrasena_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Verifique contraseña:"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/contrasena_layout"
+        style="@style/edittextstyle"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/vercontrasena"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="50"
+            android:minHeight="48dp"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="-2dp"
+            tools:layout_editor_absoluteY="96dp"
+            android:inputType="textPassword" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/aceptar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vercontrasena_layout"
+        android:text="@string/registrarse"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

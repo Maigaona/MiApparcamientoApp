@@ -4,6 +4,9 @@
     <style name="edittextstyle" parent="Theme.MiApparcamiento" >
 
         <item name="boxBackgroundColor">?attr/backgroundColor</item>
+    </style>
+    <style name="buttonborderless" parent="Widget.AppCompat.Button.Borderless">
 
+        <item name="android:textColor">@color/bluedark_nord</item>
     </style>
 </resources>

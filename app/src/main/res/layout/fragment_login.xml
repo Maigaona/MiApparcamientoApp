@@ -7,6 +7,8 @@
 
 
 
+    <!-- TODO:Falta colocar al principio el icono  -->
+
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/usuario_layout"
         android:layout_width="match_parent"
@@ -25,7 +27,8 @@
             android:layout_height="wrap_content"
             android:textSize="18sp"
             android:maxLength="50"
-            android:minHeight="48dp" />
+            android:minHeight="48dp"
+            android:inputType="textEmailAddress"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -48,7 +51,8 @@
         android:minHeight="48dp"
         android:textSize="18sp"
         tools:layout_editor_absoluteX="-2dp"
-        tools:layout_editor_absoluteY="96dp" />
+        tools:layout_editor_absoluteY="96dp"
+        android:inputType="textPassword"/>
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -63,5 +67,18 @@
         android:text="@string/aceptar"/>
 
 <!-- TODO:Falta icono de carro -->
+
+    <Button
+        android:id="@+id/registrate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aceptar"
+        android:text="@string/registrarse"
+        style="@style/buttonborderless"/>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
