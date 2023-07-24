@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <RadioGroup
+        android:id="@+id/membership_options"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/register_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/registra_tu_tarjeta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/membership_options" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/nombre_completo_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/nombre_completo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_card"
+        android:layout_marginTop="40dp"
+        style="@style/edittextstyle"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/nombre_completo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:maxLength="50"
+            android:minHeight="48dp"
+            android:inputType="textPersonName"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/numero_de_tarjeta_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Número de tarjeta:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nombre_completo_layout"
+        android:layout_marginTop="16dp"
+        style="@style/edittextstyle"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/numero_tarjeta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:maxLength="16"
+            android:minHeight="48dp"
+            android:inputType="number"
+         />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/numero_de_tarjeta_layout">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/mes_layout"
+            style="@style/edittextstyle"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/mes"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/mes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:maxLength="2"
+                android:minHeight="48dp"
+                android:textSize="18sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/año_layout"
+            style="@style/edittextstyle"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/año"
+           >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/año"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:maxLength="2"
+                android:minHeight="48dp"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </LinearLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

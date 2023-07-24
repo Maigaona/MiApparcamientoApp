@@ -5,4 +5,13 @@
     <string name="aceptar">ACEPTAR</string>
     <string name="nombre">Nombre:</string>
     <string name="registrarse">Registrarse</string>
+    <string name="marca">Marca:</string>
+    <string name="modelo">Modelo:</string>
+    <string name="longitud_del_coche">Longitud del coche:</string>
+    <string name="mensaje_longitud">Vamos a buscar espacios de acuerdo a la longitud de tu coche</string>
+    <string name="guardar">Guardar</string>
+    <string name="registra_tu_tarjeta">Registra tu tarjeta</string>
+    <string name="nombre_completo">Nombre completo:</string>
+    <string name="mes">MM</string>
+    <string name="año">YY</string>
 </resources>
