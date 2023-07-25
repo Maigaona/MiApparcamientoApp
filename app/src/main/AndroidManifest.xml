@@ -13,4 +13,9 @@
         android:theme="@style/Theme.MiApparcamiento"
         tools:targetApi="31" />
 
+    <meta-data
+        android:name="com.google.android.geo.API_KEY"
+        android:value="AIzaSyBVz8vWqKaxbR6mHgUOr3e0KKIdSMaO8to"
+        />
+
 </manifest>

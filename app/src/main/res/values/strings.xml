@@ -14,4 +14,8 @@
     <string name="nombre_completo">Nombre completo:</string>
     <string name="mes">MM</string>
     <string name="año">YY</string>
+    <string name="cvv">CVV</string>
+    <string name="realizar_pago">Realizar pago</string>
+    <string name="info_membresia">Información de membresía:</string>
+    <string name="info_auto">Información de auto:</string>
 </resources>

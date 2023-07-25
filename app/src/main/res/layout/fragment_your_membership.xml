@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <TextView
+        android:id="@+id/info_membership"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/info_membresia"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="30dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+ />
+
+    <TextView
+        android:id="@+id/membresia_contratada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Plan contratado"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="30dp"
+        app:layout_constraintTop_toBottomOf="@+id/info_membership"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/ahorro_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Ahorro total"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="30dp"
+        app:layout_constraintTop_toBottomOf="@+id/membresia_contratada"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/duracion_de_membresia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Duración de membresía"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="30dp"
+        app:layout_constraintTop_toBottomOf="@+id/ahorro_total"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <Button
+        android:id="@+id/cambiar_membresia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/duracion_de_membresia"
+        android:text="Cambiar membresía"
+        style="@style/buttonborderless"/>
+
+    <Button
+        android:id="@+id/cancelar_membresia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cambiar_membresia"
+        android:text="cancelar membresía"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

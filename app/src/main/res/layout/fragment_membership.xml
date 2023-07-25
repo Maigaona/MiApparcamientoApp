@@ -10,7 +10,17 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
-        />
+        >
+        <include layout="@layout/row_membership"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <include layout="@layout/row_membership"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <include layout="@layout/row_membership"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </RadioGroup>
 
     <TextView
         android:id="@+id/register_card"
@@ -69,23 +79,21 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
         android:layout_marginStart="30dp"
-        android:layout_marginEnd="30dp"
         android:layout_marginTop="16dp"
+        android:orientation="horizontal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/numero_de_tarjeta_layout">
-
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/mes_layout"
             style="@style/edittextstyle"
             android:layout_width="70dp"
             android:layout_height="wrap_content"
-            android:hint="@string/mes"
-            >
+            android:hint="@string/mes">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/mes"
@@ -103,8 +111,7 @@
             style="@style/edittextstyle"
             android:layout_width="70dp"
             android:layout_height="wrap_content"
-            android:hint="@string/año"
-           >
+            android:hint="@string/año">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/año"
@@ -118,10 +125,39 @@
 
         </com.google.android.material.textfield.TextInputLayout>
 
-
     </LinearLayout>
 
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/cvv_layout"
+        style="@style/edittextstyle"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/cvv"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintTop_toBottomOf="@+id/numero_de_tarjeta_layout">
 
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/cvv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:maxLength="2"
+            android:minHeight="48dp"
+            android:textAlignment="center"
+            android:textSize="18sp" />
 
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/realizar_pago"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="@string/realizar_pago"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
