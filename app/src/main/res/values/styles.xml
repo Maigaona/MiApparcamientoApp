@@ -9,4 +9,8 @@
 
         <item name="android:textColor">@color/bluedark_nord</item>
     </style>
+    <style name="icon_style" parent="Theme.MiApparcamiento">
+
+        <item name="android:backgroundTint">@color/black</item>
+    </style>
 </resources>
