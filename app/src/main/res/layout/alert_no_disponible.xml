@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
+
     <TextView
-        android:id="@+id/desocupado"
+        android:id="@+id/no_disponible"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Desocupado"
+        android:text="No Disponible"
         android:textStyle="bold"
         android:layout_marginTop="30dp"
-        android:textColor="@color/green_nord"
+        android:textColor="@color/grey_nord"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
@@ -24,7 +25,7 @@
         android:layout_marginTop="20dp"
         android:layout_marginStart="30dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/desocupado"
+        app:layout_constraintTop_toBottomOf="@+id/no_disponible"
         tools:text="Calle 414a #258 de San Juan de Aragón" />
 
 
@@ -36,7 +37,21 @@
         android:layout_marginStart="30dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/calle"
-        tools:text="Espacio libre aproximado de:   4700m" />
+        tools:text="Espacio libre aproximado de: " />
+
+    <TextView
+        android:id="@+id/aviso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/distancia"
+        app:layout_goneMarginStart="30dp"
+        tools:text="Esta información no esta disponible en este momento"
+        android:textAlignment="center" />
 
     <Button
         android:id="@+id/button_ir"
@@ -50,9 +65,7 @@
         android:layout_marginTop="26dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/distancia" />
-
-
+        app:layout_constraintTop_toBottomOf="@+id/aviso" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

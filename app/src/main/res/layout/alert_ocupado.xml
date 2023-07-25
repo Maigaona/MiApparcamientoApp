@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
+
     <TextView
-        android:id="@+id/desocupado"
+        android:id="@+id/ocupado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Desocupado"
+        android:text="Ocupado"
         android:textStyle="bold"
         android:layout_marginTop="30dp"
-        android:textColor="@color/green_nord"
+        android:textColor="@color/red_nord"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
@@ -24,7 +25,7 @@
         android:layout_marginTop="20dp"
         android:layout_marginStart="30dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/desocupado"
+        app:layout_constraintTop_toBottomOf="@+id/ocupado"
         tools:text="Calle 414a #258 de San Juan de Aragón" />
 
 
@@ -36,21 +37,7 @@
         android:layout_marginStart="30dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/calle"
-        tools:text="Espacio libre aproximado de:   4700m" />
-
-    <Button
-        android:id="@+id/button_ir"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/rectangle_button"
-        android:text="@string/ir"
-        android:textSize="20sp"
-        android:scaleX=".7"
-        android:scaleY=".7"
-        android:layout_marginTop="26dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/distancia" />
+        tools:text="Espacio libre aproximado de:   10m" />
 
 
 
