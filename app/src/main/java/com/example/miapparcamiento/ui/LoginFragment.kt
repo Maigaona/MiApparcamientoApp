@@ -6,6 +6,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.NavController
+import androidx.navigation.fragment.findNavController
+import com.example.miapparcamiento.R
 import com.example.miapparcamiento.databinding.FragmentLoginBinding
 
 class LoginFragment : Fragment() {
@@ -15,6 +18,8 @@ class LoginFragment : Fragment() {
     private var _binding: FragmentLoginBinding?= null
     //!! hace que no sea nulo
     private val binding get() = _binding!!
+    private lateinit var navController: NavController
+
 
 
 // Se crea la vista para que android la muestre en pantalla despues
@@ -23,6 +28,8 @@ class LoginFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+
+        navController= findNavController()
 
         //crea la vista dentro del contenedor que es la actividad y regresa la vista para que android la dibuje por si sola
         _binding= FragmentLoginBinding.inflate(inflater, container, false)
@@ -40,6 +47,7 @@ class LoginFragment : Fragment() {
 
         binding.aceptar.setOnClickListener { login() }
         binding.registrarse.setOnClickListener { signup() }
+
     }
 
     fun login() {
@@ -66,6 +74,6 @@ class LoginFragment : Fragment() {
 
     fun signup() {
 
-        //TODO:llevar al usuario a la pantalla de registro
+        navController.navigate(R.id.action_loginFragment_to_signUpFragment)
     }
 }
