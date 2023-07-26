@@ -10,7 +10,7 @@
     <!-- TODO:Falta colocar al principio el icono  -->
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/usuario_layout"
+        android:id="@+id/mail_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/correo"
@@ -22,7 +22,7 @@
         android:layout_marginStart="30dp">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/usuario"
+            android:id="@+id/mail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="18sp"
@@ -32,19 +32,19 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/contraseña_layout"
+        android:id="@+id/contrasenna_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/contrase_a"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginTop="40dp"
-        app:layout_constraintTop_toBottomOf="@+id/usuario_layout"
+        app:layout_constraintTop_toBottomOf="@+id/mail_layout"
         style="@style/edittextstyle"
         android:layout_marginEnd="30dp"
         android:layout_marginStart="30dp">
 
         <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/visitorNamesEditText"
+        android:id="@+id/contrasenna"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:maxLength="50"
@@ -63,13 +63,13 @@
         android:layout_marginTop="50dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/contraseña_layout"
+        app:layout_constraintTop_toBottomOf="@+id/contrasenna_layout"
         android:text="@string/aceptar"/>
 
 <!-- TODO:Falta icono de carro -->
 
     <Button
-        android:id="@+id/registrate"
+        android:id="@+id/registrarse"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
