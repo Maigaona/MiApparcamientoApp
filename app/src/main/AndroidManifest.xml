@@ -11,7 +11,24 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MiApparcamiento"
-        tools:targetApi="31" />
+        tools:targetApi="31"
+        >
+
+        <!-- Se registra la actividad main activity como parte de la aplicación -->
+        <activity
+            android:name=".ui.MainActivity"
+            android:exported="true">
+            <intent-filter>
+
+                <!-- El MAIN le dice a android que esta es la actividad principal -->
+                <action android:name="android.intent.action.MAIN"/>
+
+                <!-- El LAUNCHER le dice a android que tiene que abrir esta actividad al presionar el icono de la aplicación-->
+                <category android:name="android.intent.category.LAUNCHER"/>
+
+            </intent-filter>
+        </activity>
+    </application>
 
     <meta-data
         android:name="com.google.android.geo.API_KEY"
@@ -25,6 +42,7 @@
 
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
 
 
 </manifest>
