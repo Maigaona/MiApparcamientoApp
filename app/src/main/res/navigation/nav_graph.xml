@@ -1,6 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/nav_graph">
-
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mapFragment">
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.example.miapparcamiento.ui.MapFragment"
+        android:label="MapFragment"
+        tools:layout="@layout/fragment_map">
+        <action
+            android:id="@+id/action_mapFragment_to_profileFragment2"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_mapFragment_to_membershipFragment2"
+            app:destination="@id/membershipFragment" />
+        <action
+            android:id="@+id/action_mapFragment_to_registerVehicleFragment2"
+            app:destination="@id/registerVehicleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.miapparcamiento.ui.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment2_to_yourMemberShipFragment2"
+            app:destination="@id/yourMemberShipFragment" />
+        <action
+            android:id="@+id/action_profileFragment2_to_myCarFragment2"
+            app:destination="@id/myCarFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/membershipFragment"
+        android:name="com.example.miapparcamiento.ui.MembershipFragment"
+        android:label="fragment_membership"
+        tools:layout="@layout/fragment_membership" />
+    <fragment
+        android:id="@+id/registerVehicleFragment"
+        android:name="com.example.miapparcamiento.ui.RegisterVehicleFragment"
+        android:label="fragment_register_vehicle"
+        tools:layout="@layout/fragment_register_vehicle" />
+    <fragment
+        android:id="@+id/myCarFragment"
+        android:name="com.example.miapparcamiento.ui.MyCarFragment"
+        android:label="fragment_my_car"
+        tools:layout="@layout/fragment_my_car" />
+    <fragment
+        android:id="@+id/yourMemberShipFragment"
+        android:name="com.example.miapparcamiento.ui.YourMemberShipFragment"
+        android:label="fragment_your_membership"
+        tools:layout="@layout/fragment_your_membership" />
 </navigation>
