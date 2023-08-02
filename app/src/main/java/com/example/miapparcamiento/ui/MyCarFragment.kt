@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.NavController
 import androidx.navigation.fragment.findNavController
+import com.example.miapparcamiento.R
 import com.example.miapparcamiento.databinding.FragmentMembershipBinding
 import com.example.miapparcamiento.databinding.FragmentMyCarBinding
 
@@ -35,6 +36,9 @@ class MyCarFragment: Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        binding.editarInformacion.setOnClickListener {
+            navController.navigate(R.id.action_myCarFragment_to_registerVehicleFragment)
+        }
 
     }
 }

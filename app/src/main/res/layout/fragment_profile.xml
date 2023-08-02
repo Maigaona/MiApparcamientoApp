@@ -54,7 +54,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/correo_perfil"
-        tools:text="USUARIO PREMIUM"
+        android:text="@string/usuario_premium"
         android:textColor="@color/gold"
         android:textStyle="bold"
         tools:textSize="15sp" />
@@ -101,7 +101,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="Mi auto"
+        android:text="@string/mi_auto"
         app:layout_constraintStart_toEndOf="@+id/car_icon"
         app:layout_constraintTop_toBottomOf="@+id/mi_membresia" />
 
@@ -109,7 +109,7 @@
         android:id="@+id/cerrar_sesion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Cerrar sesión"
+        android:text="@string/cerrar_sesión"
         android:layout_marginBottom="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

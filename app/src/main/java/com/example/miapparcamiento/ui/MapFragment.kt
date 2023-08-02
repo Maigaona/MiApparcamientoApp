@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.NavController
 import androidx.navigation.fragment.findNavController
+import com.example.miapparcamiento.R
 import com.example.miapparcamiento.databinding.FragmentMapBinding
 
 class MapFragment: Fragment() {
@@ -34,6 +35,11 @@ class MapFragment: Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        binding.circleMap.setOnClickListener {
+            navController.navigate(R.id.action_mapFragment_to_profileFragment)
+        }
+
 
     }
 

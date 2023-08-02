@@ -54,14 +54,26 @@
 
     <Button
         android:id="@+id/editar_informacion"
+        style="@style/buttonborderless"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:layout_marginStart="15dp"
+        android:text="@string/editar_informacion"
+        app:layout_constraintStart_toEndOf="@+id/pencil_info"
+        app:layout_constraintTop_toBottomOf="@+id/longitud_carro" />
+
+    <ImageView
+        android:id="@+id/pencil_info"
+        style="@style/icon_style"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="@drawable/outline_edit_24"
+        app:layout_constraintBottom_toBottomOf="@+id/editar_informacion"
+        app:layout_constraintTop_toTopOf="@+id/editar_informacion"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/longitud_carro"
-        android:text="Editar información"
-        style="@style/buttonborderless"/>
+        android:layout_marginStart="30dp"
+        android:padding="8dp"/>
+
 
 
 

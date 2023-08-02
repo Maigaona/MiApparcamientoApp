@@ -25,7 +25,7 @@
             android:textSize="18sp"
             android:maxLength="50"
             android:minHeight="48dp"
-            android:inputType="textPersonName"/>
+            android:inputType="textCapWords"/>
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -50,7 +50,7 @@
             android:textSize="18sp"
             tools:layout_editor_absoluteX="-2dp"
             tools:layout_editor_absoluteY="96dp"
-            android:inputType="textPassword"/>
+            android:inputType="textCapWords"/>
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -75,7 +75,7 @@
             android:textSize="18sp"
             tools:layout_editor_absoluteX="-2dp"
             tools:layout_editor_absoluteY="96dp"
-            android:inputType="textPassword"/>
+            android:inputType="numberDecimal"/>
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -92,7 +92,7 @@
         />
 
     <Button
-        android:id="@+id/registrate"
+        android:id="@+id/guardar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="52dp"

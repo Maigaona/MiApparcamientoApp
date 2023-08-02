@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.NavController
 import androidx.navigation.fragment.findNavController
+import com.example.miapparcamiento.R
 import com.example.miapparcamiento.databinding.FragmentMyCarBinding
 import com.example.miapparcamiento.databinding.FragmentProfileBinding
 
@@ -35,6 +36,13 @@ class ProfileFragment: Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        binding.miMembresia.setOnClickListener {
+            navController.navigate(R.id.action_profileFragment_to_yourMemberShipFragment)
+        }
+
+        binding.miAuto.setOnClickListener {
+            navController.navigate(R.id.action_profileFragment_to_myCarFragment)
+        }
 
     }
 }

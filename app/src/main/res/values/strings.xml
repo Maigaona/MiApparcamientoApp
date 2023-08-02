@@ -7,7 +7,7 @@
     <string name="registrarse">Registrarse</string>
     <string name="marca">Marca:</string>
     <string name="modelo">Modelo:</string>
-    <string name="longitud_del_coche">Longitud del coche:</string>
+    <string name="longitud_del_coche">Longitud del coche (en metros):</string>
     <string name="mensaje_longitud">Vamos a buscar espacios de acuerdo a la longitud de tu coche</string>
     <string name="guardar">Guardar</string>
     <string name="registra_tu_tarjeta">Registra tu tarjeta</string>
@@ -21,4 +21,15 @@
     <string name="mi_membresia">Mi membresía</string>
     <string name="ir">IR</string>
     <string name="busca_aqu">Busca aquí</string>
+    <string name="usuario_premium">USUARIO PREMIUM</string>
+    <string name="mi_auto">Mi auto</string>
+    <string name="cerrar_sesión">Cerrar sesión</string>
+    <string name="cambiar_membresia">Cambiar membresía</string>
+    <string name="cancelar_membresia">cancelar membresía</string>
+    <string name="editar_informacion">Editar información</string>
+    <string name="mi_perfil">Mi Perfil</string>
+    <string name="membresias">Membresías</string>
+    <string name="registra_tu_auto">Registra tu Auto</string>
+    <string name="mi_Auto">Mi Auto</string>
+    <string name="mi_membres_a">Mi Membresía</string>
 </resources>

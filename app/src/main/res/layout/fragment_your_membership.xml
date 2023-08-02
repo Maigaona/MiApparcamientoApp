@@ -53,24 +53,36 @@
 
     <Button
         android:id="@+id/cambiar_membresia"
+        style="@style/buttonborderless"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginStart="15dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/duracion_de_membresia"
-        android:text="Cambiar membresía"
-        style="@style/buttonborderless"/>
+        android:layout_marginTop="32dp"
+        android:text="@string/cambiar_membresia"
+        app:layout_constraintStart_toEndOf="@+id/pencil_membresia"
+        app:layout_constraintTop_toBottomOf="@+id/duracion_de_membresia" />
 
     <Button
         android:id="@+id/cancelar_membresia"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="cancelar membresía"
+        android:text="@string/cancelar_membresia"
         android:layout_marginBottom="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/pencil_membresia"
+        style="@style/icon_style"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="30dp"
+        android:background="@drawable/outline_edit_24"
+        app:layout_constraintBottom_toBottomOf="@+id/cambiar_membresia"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cambiar_membresia"
+        android:padding="8dp"/>
+
 
 
 
