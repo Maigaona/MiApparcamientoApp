@@ -1,5 +1,6 @@
 package com.example.miapparcamiento.ui
 
+import android.content.Context
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -7,6 +8,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.NavController
 import androidx.navigation.fragment.findNavController
+import com.example.miapparcamiento.Constantes
 import com.example.miapparcamiento.R
 import com.example.miapparcamiento.databinding.FragmentMyCarBinding
 import com.example.miapparcamiento.databinding.FragmentProfileBinding
@@ -42,6 +44,16 @@ class ProfileFragment: Fragment() {
 
         binding.miAuto.setOnClickListener {
             navController.navigate(R.id.action_profileFragment_to_myCarFragment)
+        }
+
+        binding.cerrarSesion.setOnClickListener {
+            var sharedPreferences= requireActivity().getSharedPreferences(Constantes.PREFERENCES, Context.MODE_PRIVATE)
+            with(sharedPreferences.edit()){
+                putBoolean(Constantes.USUARIO, false)
+                apply()
+            }
+            requireActivity().recreate()
+
         }
 
     }

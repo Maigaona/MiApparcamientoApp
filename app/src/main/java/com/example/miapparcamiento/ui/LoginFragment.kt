@@ -1,5 +1,6 @@
 package com.example.miapparcamiento.ui
 
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,6 +9,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.NavController
 import androidx.navigation.fragment.findNavController
+import com.example.miapparcamiento.Constantes
 import com.example.miapparcamiento.R
 import com.example.miapparcamiento.databinding.FragmentLoginBinding
 
@@ -64,6 +66,12 @@ class LoginFragment : Fragment() {
             return
         }
         //TODO:Enviar correo y contraseña al servidor
+
+        var sharedPreferences= requireActivity().getSharedPreferences(Constantes.PREFERENCES, Context.MODE_PRIVATE)
+        with(sharedPreferences.edit()){
+            putBoolean(Constantes.USUARIO, true)
+            apply()
+        }
 
         //le dice inicia una actividad, que es la de mainactivity
         requireActivity().startActivity(Intent(requireContext(), MainActivity::class.java))
